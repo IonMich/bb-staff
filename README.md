@@ -1,4 +1,4 @@
-# Amortized Cost Analyzer
+# 🔍 Amortized Cost Analyzer
 
 Interactive web app for analyzing amortized costs of BuzzerBeater staff.
 
@@ -34,15 +34,17 @@ npm run dev
 
 ## Formula
 
-A(S,T,L) = (h(S,L) + S × ((1+g(L))^(T+1)-1)/g(L)) / T
+The amortized cost $A(S,T,L)$ is calculated using the following formula:
+
+$$A(S,T,L) = \frac{h(S,L)}{T} + \frac{S}{T} \cdot \frac{(1+g(L))^{T+1}-1}{g(L)}$$
 
 Where:
 
-- S = Starting salary
-- T = Duration (weeks)
-- L = Asset level (1-7)
-- g(L) = Growth factor: 1% + (L-1) × 0.25%
-- h(S,L) = Hiring cost (linear interpolation from market data)
+- $S$ = Starting salary
+- $T$ = Duration (weeks)
+- $L$ = Asset level (1-7)
+- $g(L)$ = Growth factor: $1\% + (L-1) \times 0.25\%$
+- $h(S,L)$ = Hiring cost (linear interpolation from market data)
 
 ## Tech Stack
 
