@@ -43,7 +43,7 @@ Where:
 - $S$ = Starting salary
 - $T$ = Duration (weeks)
 - $L$ = Asset level (1-7)
-- $g(L)$ = Growth factor: $(L-1) \times 0.25\%$
+- $g(L)$ = Growth factor: $(L-1) \times 0.0025$
 - $h(S,L)$ = Hiring cost (linear interpolation from market data)
 
 ## Tech Stack
