@@ -8,6 +8,9 @@ yarn-error.log*
 dist/
 build/
 
+# Generated analysis files
+output/
+
 # IDE
 .vscode/
 .idea/
